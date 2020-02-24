@@ -11,7 +11,10 @@ theta = zeros(size(X, 2), 1);
 %
 
 % ---------------------- Sample Solution ----------------------
-
+X_T = X';
+h = inv(X_T*X);
+v = X_T*y;
+theta = h*v;
 
 
 
